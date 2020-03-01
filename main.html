@@ -1,0 +1,772 @@
+<html>
+
+<head>
+	<title>Tatil,Etstur'dan sorulur! | etstur.com</title>
+	<link rel="icon" href="ets-icon.png">
+	<script src="jquery.js"></script>
+	<link rel="stylesheet" type="text/css" href="mycss.css">	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
+	<script src="js/jquery.js"></script>
+</head>
+
+<body>	
+	
+	<!-- Top Menu !-->	
+	<div class="top-menu">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div>
+						<a href=""><img src="phone_icon.png" id="phone_icon"></a>
+					</div>
+					<div>
+						<a href="">
+							<div id="top-text">444 0 387 &nbsp&nbsp|</div>
+							<div id="top-text">0850 955 5555</div>	
+						</a>				
+					</div>
+				</div>
+			</div>
+		</div>	
+		
+	</div> <!-- Top Menu Ends !-->
+	
+	<!-- Second Menu !-->	
+	<div class="second-menu">
+	
+		<div class="container">
+			<div class="col-lg-12 col-md-12 col-sm-9 col-xs-8">
+				<a href="#"><div><img src="ets-logo.png" id="ets-logo"></div></a>							
+				<a href="#"><div id="second-text">OTEL</div></a>
+				<a href="#"><div id="second-text">TUR</div></a>
+				<a href="#"><div id="second-text">GEMI</div></a>
+				<a href="#"><div id="second-text">UÇAK</div></a>
+				<a href="#"><div id="second-text">ARAÇ</div></a>
+				<a href="#"><div id="second-text">HAC & UMRE</div></a>
+				<a href="#"><div><img src="disneyland-logo.png" id="disneyland-logo"></div></a>
+				<a href="#"><div><img src="legends-logo.png" id="legends-logo"></div></a>				
+				<a href="#"><div id="giris-yap"data-toggle="modal" data-target="#myModalGiris">Giriş yap</div></a>
+				<a href="#"><div id="kayit-ol"data-toggle="modal" data-target="#myModalKayit">Kayıt ol</div></a>
+				<a href="#"><div data-toggle="collapse" data-target="#content"><img src="alarm-logo.png" id="alarm-logo"></div></a>					
+			</div>
+		</div>
+	
+		
+		
+		<!-- Giris yap Button !-->				
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4"></div>								
+				<div class="col-md-4">
+					<div class="modal fade" id="myModalGiris" role="dialog">
+						<div class="modal-dialog giris-panel">    
+							<div class="modal-content ">       	
+								<div class="modal-body">
+									<button type="button" class="close" data-dismiss="modal">&times;</button> 
+									<h3>Giriş Yap</h3>
+									<br>
+									<p id="giris-inside-text">E-posta adresiniz:</p>
+									<input id="e-posta" type="text">
+									<p id="giris-inside-text">Şifreniz: <a id="sifre-unut"href=""><strong>Şifrenizi mi unuttunuz?</strong></a></p>
+									<input id="sifre" type="text">
+									<input id="beni-hatirla"type="checkbox">&nbspBeni hatırla
+									<p><input type="submit" id="giris-button"class="btn"value="GİRİŞ YAP"></p>
+									<p>Hesabınız yok mu? <a id="uye-olun"href=""><strong>Üye olun!</strong></a></p>
+									<p>VEYA</p>
+									<p><input type="submit" id="facebook-button"class="btn"value="Facebook ile giriş yapın"></p>
+								</div>
+							</div>
+						</div> 
+					</div>
+				</div>
+				<div class="col-md-4"></div>
+			</div>
+		</div>
+		
+		<!-- Kayıt ol Button !-->		 
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3"></div>
+				<div class="col-md-6">							
+					<div class="modal fade" id="myModalKayit" role="dialog">
+						<div class="modal-dialog panel-kayit">    
+							<div class="modal-content ">       	
+								<div class="modal-body">
+									<button type="button" class="close" data-dismiss="modal">&times;</button> 
+									<h3>Üye Ol</h3>
+									<br>
+									<p><input type="submit" id="facebook-button"class="btn"value="Facebook ile giriş yapın"></p>
+									<p>VEYA FORMU DOLDURUN</p>	
+										<div class="col-md-6">
+											<p id="giris-inside-text">Adınız:</p>
+											<input id="kayit-input">
+											<p id="giris-inside-text">E-posta adresiniz:</p>
+											<input id="kayit-input">
+											<p id="giris-inside-text">Şifreniz:</p>
+											<input id="kayit-input">
+										</div>
+										<div class="col-md-6">
+											<p id="giris-inside-text">Soyadınız:</p>
+											<input id="kayit-input">
+											<p id="giris-inside-text">Telefon Numaranız:</p>
+											<input id="kayit-input">
+											<p id="giris-inside-text">Telefon Numaranız:</p>
+											<input id="kayit-input">					
+										</div>	
+									<div>
+									<input type="checkbox"> &nbsp <a href="" id="sifre-unut">Kullanım şartları </a> ve <a href=""id="sifre-unut">Gizlilik bildirimini </a> kabul ediyorum.
+									</div>									
+									<input type="checkbox"> &nbsp Fırsat ve kampanyalardan haberdar olmak istiyorum. <a href=""id="sifre-unut">Detaylı bilgi </a>
+									<br><br>									
+									<p><input type="submit" id="giris-button"class="btn"value="ÜYE OL"></p>
+									<p>Zaten bir hesabınız var mı? <a href="" id="sifre-unut"><strong>Giriş yapın</strong></a></p>
+								</div>							
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3"></div>						
+			</div>						
+		</div>		
+		
+		<!-- Alarm Button !-->		
+		<div class="collapse" id="content">
+			<div class="container">
+				<div class="col-md-12">
+					<div class="panel panel-default warning-panel">							
+						<p class="warning-panel-text">Size özel fırsatlardan yararlanmak ve <br>haberdar olmak için giriş yapın!</p>
+						<p><button class="button-text">Giriş Yap</button></p>
+						<p class="warning-panel-text">Henüz üye değil misiniz? <button class="button-text">Kayıt Ol</button></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>  <!-- Second menu ends !-->
+	
+	<!-- Third Menu !-->
+	<div class="third-menu">		
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">					
+					<section class="icon-box-tabs ">
+					
+					<div class="wrapper">
+						<ul class="nav nav-pills">
+							<li class="active">
+								<a data-toggle="tab" href="#tab-15" aria-expanded="true">
+									<img src="hotel-icon2.png">
+								<p>OTEL</p>
+								</a>
+							</li>
+							<li class="">
+								<a data-toggle="tab" href="#tab-16" aria-expanded="false">
+									<img src="suitcase-icon.png">
+									<p>TUR</p>
+								</a>
+							</li>
+							<li class="">
+								<a data-toggle="tab" href="#tab-17" aria-expanded="false">
+									<img src="airplane-icon.png">
+									<p>UÇAK</p>
+								</a>
+							</li>						
+						</ul>
+					</div>
+					
+					<div class="panel-body">
+						<div class="tab-content">	
+							<div id="tab-15" class="tab-pane active">
+								<div class="panel panel-default panel-settings search">
+									<div class="container">
+										<div class="row">
+											<div class="col-md-4">
+												<input id="search-hotel"type="text" placeholder="Otel, konum veya tema yazın...">
+											</div>
+											
+											<div class="col-md-2">
+												<button id="top-button-1" type="button">Giriş tarihi</button>
+											</div>
+											<div id="border12"></div>
+											
+											<div class="col-md-2">
+												<button id="top-button-1" type="button">Çıkış tarihi</button>
+											</div>
+											
+											<div class="col-md-2">
+												<button id="top-button-2" type="button"><strong>2 kişi</strong></button>
+											</div>
+											
+											<div class="col-md-2">
+												<button id="search">ARA</button>
+											</div>
+										</div>
+									</div>
+								</div>								
+							</div>
+							<div id="tab-16" class="tab-pane">
+								<div class="panel panel-default panel-settings search">
+									<div class="container">
+										<div class="row">
+											<div class="col-md-5">
+												<select class="form-control">
+													<option value="one">Tüm Kültür / Yurt Dışı / Gemi Turları</option>
+													<option value="two">Tüm Kültür Turları</option>
+													<option value="three">Tüm Yurt Dışı Turları</option>
+													<option value="four">Tüm Gemi Turları</option>	
+												</select>	
+											</div>
+											<div class="col-md-5">
+												<select class="form-control">
+													<option value="one">Tur seçiniz</option>
+													<option value="two">Afrika Turları</option>
+													<option value="three">Balkan ve Yunanistan Turları</option>
+													<option value="four">Benelüks Paris Amsterdam Turları</option>
+													<option value="five">Güney ve Kuzey Amerika Turları</option>
+												</select>	
+											</div>
+											<div class="col-md-2">													
+												<button id="search">ARA</button>
+											</div>
+										</div>										
+									</div>	
+								</div>
+							</div>
+							<div id="tab-17" class="tab-pane">
+								<div class="panel panel-default panel-settings search">
+									<div class="container">
+										<div class="row">
+											
+											<div class="col-md-2">
+												<input id="top-button-1" type="text" placeholder="Nereden?">
+											</div>
+												
+											<div class="col-md-2">
+												<input id="top-button-1" type="text" placeholder="Nereye?">
+											</div>	
+									
+										
+											<div class="col-md-2">
+												<button id="top-button-1"type="button">Giriş tarihi</button>											
+											</div>
+											<div class="col-md-2">
+												<button id="top-button-1"type="button">Dönüş Ekle</button>
+											</div>
+											<div class="col-md-2">
+												<a><button id="top-button-2"type="button"><strong>1 kişi</strong></button></a>
+								
+											</div>
+											<div class="col-md-2">
+												<button id="search">ARA</button>				
+											</div>
+											
+											
+										</div>										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>				
+					</section>
+				</div>
+			</div>
+		</div>
+	</div> <!-- Third Menu Ends !-->
+
+	<div class="space"></div>
+	
+	<!-- Slider And Right Menu !-->
+	<div class="container ">
+		<div class="col-md-8">		
+			<div id="myCarousel" class="carousel slide" data-ride="carousel" style="height:350px">		
+				<ol class="carousel-indicators" >
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+					<li data-target="#myCarousel" data-slide-to="3"></li>
+					<li data-target="#myCarousel" data-slide-to="4"></li>
+					<li data-target="#myCarousel" data-slide-to="5"></li>
+					<li data-target="#myCarousel" data-slide-to="6"></li>
+					<li data-target="#myCarousel" data-slide-to="7"></li>
+					<li data-target="#myCarousel" data-slide-to="8"></li>
+					<li data-target="#myCarousel" data-slide-to="9"></li>
+					<li data-target="#myCarousel" data-slide-to="10"></li>
+					<li data-target="#myCarousel" data-slide-to="11"></li>
+					<li data-target="#myCarousel" data-slide-to="12"></li>
+				</ol>
+
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="https://imagessl.etstur.com/files/images/site//images/cmsRoot/slide/the-land-of-legend-cocuk-760x400-30062017.jpg" alt="Los Angeles" style="width:100%;">
+					</div>
+
+					<div class="item">
+						<img src="https://imagessl.etstur.com/files/images/site//images/cmsRoot/slide/760x400.jpg" alt="Chicago" style="width:100%;">
+					</div>
+			
+					<div class="item">
+						<img src="https://imagessl.etstur.com/files/images/site//images/cmsRoot/slide/barut-hotels-760x400-26012017.jpg" alt="New york" style="width:100%;">
+					</div>
+				  
+					<div class="item">
+						<img src="https://imagessl.etstur.com/files/images/site//images/cmsRoot/slide/yaz-firsatlari-760x400-06062017.jpg" alt="New york" style="width:100%;">
+					</div>
+				  
+					<div class="item">
+						<img src="https://imagessl.etstur.com/files/images/site//images/cmsRoot/slide/rixos-sungate-body-mind-etkinlik-2017-760x400-16062017.jpg" alt="Chicago" style="width:100%;">
+					</div>
+				
+					<div class="item">
+						<img src="https://imagessl.etstur.com/files/images/site//images/cmsRoot/slide/rixos-hotels-genel-760x400-02112016.jpg" alt="New york" style="width:100%;">
+					</div>
+				  
+					<div class="item">
+						<img src="https://imagessl.etstur.com/files/images/site//images/cmsRoot/slide/Rixos-gocek-sanatcili-760x400-01072017.jpg" alt="New york" style="width:100%;">
+					</div>
+				  
+					<div class="item">
+						<img src="https://imagessl.etstur.com/files/images/site//images/cmsRoot/slide/maxxroyal-2017-etkinlik-genel-760x400-10042017.jpg" alt="Chicago" style="width:100%;">
+					</div>
+				
+					<div class="item">
+						<img src="https://imagessl.etstur.com/files/images/site//images/cmsRoot/slide/gloria-etkinlik-760x400-04072017.jpg" alt="New york" style="width:100%;">
+					</div>
+				  
+					<div class="item">
+						<img src="https://imagessl.etstur.com/files/images/site//images/cmsRoot/slide/cornelia-760x400-04042017-1.jpg" alt="New york" style="width:100%;">
+					</div>
+				  
+					<div class="item">
+						<img src="https://imagessl.etstur.com/files/images/site//images/cmsRoot/slide/calista-etkinlik-760x400-24042017.jpg" alt="Chicago" style="width:100%;">
+					</div>
+				
+					<div class="item">
+						<img src="https://imagessl.etstur.com/files/images/site//images/cmsRoot/slide/sentido-hotels-760x400-26012017.jpg" alt="New york" style="width:100%;">
+					</div>
+				  
+					<div class="item">
+						<img src="https://imagessl.etstur.com/files/images/site//images/cmsRoot/slide/liberty-hotels-lykia-760x400-26012017.jpg" alt="New york" style="width:100%;">
+					</div>				
+				</div>
+
+			<!-- Left and right controls -->
+			<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+			  <span class="glyphicon glyphicon-chevron-left"></span>
+			  <span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control left-margin" href="#myCarousel" data-slide="next">
+			  <span class="glyphicon glyphicon-chevron-right"></span>
+			  <span class="sr-only">Next</span>
+			</a>
+		</div>
+	</div>
+			
+	<div class="col-md-4">
+		<a href="">
+			<div class="right-menu">			
+				<img src="right-menu-1.jpg" height="113px">
+				<strong>&nbsp&nbspYaz Fırsatları</strong>
+							
+			</div>
+		</a>
+		<a href="">
+			<div class="right-menu">
+				<img src="right-menu-2.jpg" height="113px">				
+				<strong>&nbsp&nbspSon Dakika Tatil Fırsatları</strong>							
+			</div>
+		</a>
+		<a href="">
+			<div class="right-menu">
+				<img src="right-menu-3.jpg" height="113px">
+				<strong> &nbsp&nbspYunan Adaları Turları Başladı</strong>
+			</div>
+		</a>
+	</div>
+	</div>
+
+	<div class="space"></div>
+
+	<!-- Middle Menu and Middle Right !-->
+	<div class="container">
+		<div class="col-md-8">	
+			<div class="middle-menu">	
+				<div id="middle-menu-text">Populer Bölgeler</div>
+				<a href=""><div id="middle-logo"><img src="middle-menu-1.png"><hr></div></a>
+				<a href=""><div id="middle-logo"><img src="middle-menu-2.png"><hr></div></a>
+				<a href=""><div id="middle-logo"><img src="middle-menu-3.png"><hr></div></a>
+				
+				<div class="col-sm-3">
+					<a href="">
+						<div id="otel-top-text">Bellek Otelleri</div> <br>
+						<div id="otel-bottom-text">55.0 TL'den itibaren<hr></div>
+					</a>
+					<a href="">
+						<div id="otel-top-text">Side Otelleri</div> <br>
+						<div id="otel-bottom-text">58.5 TL'den itibaren<hr></div>
+					</a>
+					<a href="">
+						<div id="otel-top-text">İstanbul Otelleri</div> <br>
+						<div id="otel-bottom-text">79.0 TL'den itibaren<hr></div>
+					</a>
+					<a href="">
+						<div id="otel-blue-text">Tüm Bölgeler</div>
+					</a>
+				</div>
+				
+				<div class="col-sm-3 left-space">				
+					<a href="">
+						<div id="otel-top-text">Kemer Otelleri</div> <br>
+						<div id="otel-bottom-text">74.75 TL'den itibaren<hr></div>
+					</a>
+					<a href="">
+						<div id="otel-top-text">Çeşme Otelleri</div> <br>
+						<div id="otel-bottom-text">4.04 EUR'dan itibaren<hr></div>
+					</a>
+					<a href="">
+						<div id="otel-top-text">İzmir Otelleri</div> <br>
+						<div id="otel-bottom-text">4.04 EUR'dan itibaren<hr></div>
+					</a>
+					
+				</div>
+				
+				<div class="col-sm-3 left-space">				
+					<a href="">
+						<div id="otel-top-text">Fethiye Otelleri</div> <br>
+						<div id="otel-bottom-text">68.0 TL'den itibaren<hr></div>
+					</a>
+					<a href="">
+						<div id="otel-top-text">Çeşme Otelleri</div> <br>
+						<div id="otel-bottom-text">143.65 TL'den itibaren<hr></div>
+					</a>
+					<a href="">
+						<div id="otel-top-text">Ankara Otelleri</div> <br>
+						<div id="otel-bottom-text">95.0 TL'den itibaren<hr></div>
+					</a>
+				</div>			
+			</div>
+		</div>
+			
+		<div class="container">
+			<div class="col-md-4">
+				<div class="right-menu-2 son-rez-border">
+					<div id="middle-menu-text2">Son Rezarvasyonlar</div>
+					<p><img id="rez-logo" src="rez1-logo.png"><a><strong>Monta Verde</a></strong> tesisinde yer ayrıldı.</p>			
+					<p><img id="rez-logo" src="rez2-logo.png"><a><strong>Foça Yalı Hotel</a></strong> tesisinde yer ayrıldı.</p>
+					<p><img id="rez-logo" src="rez3-logo.png"><a><strong>Park Inn Radisson</a></strong> tesisinde yer ayrıldı.</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+					<a href=""><div class="right-menu-logo"></div></a>	
+			</div>
+		</div>
+		
+	</div> <!-- Middle Menu and Right Menu Ends !-->
+		
+	<div class="space"></div> 
+	
+	<!-- Bottom Menu Images !-->
+	<div class="container">
+		<div class="col-md-7">
+			<div class="border2">				
+				<div class="middle-menu-3">
+					<center>
+						<button id="middle-menu-btn">Yurt Dışı Turları</button>
+					</center>
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-md-5">
+			<div class="border">
+				<div class="middle-menu-right1">	
+					<center>
+						<button id="right-menu-btn">Kültür Turları</button>
+					</center>		
+				</div>
+			</div>
+			
+			<div class="border">
+				<div class="middle-menu-right2">
+					<center>
+						<button id="right-menu-btn">Gemi Turları</button>
+					</center>
+				</div>
+			</div>
+		</div>		
+	</div> 
+	
+	<!-- Bottom Menu Buttons !-->
+	<div class="container">
+		<div class="col-lg-12 col-md-8 col-sm-12 col-xs-10">		
+			<div class="wrapper">		
+				<button type="button" class="bottom-buttons">Tatil Köyü & Resort</button>				
+				<button type="button" class="bottom-buttons">Yurt Dışı Oteller</button>
+				<button type="button" class="bottom-buttons">Kıbrıs Otelleri</button>
+				<button type="button" class="bottom-buttons">Şehir Otelleri</button>
+				<button type="button" class="bottom-buttons">Son Dakika Fırsatları</button>
+				<button type="button" class="bottom-buttons">Balayı Otelleri</button>
+				<button type="button" class="bottom-buttons">Spa Otelleri</button>
+				<button type="button" class="bottom-buttons">Aquapark Otelleri</button>
+				<button type="button" class="bottom-buttons">Çocuk Dostu Oteller</button>
+				<button type="button" class="bottom-buttons">Bebek Dostu Oteller</button>
+				<button type="button" class="bottom-buttons">2 Çocuk Ücretsiz Oteller</button>
+				<button type="button" class="bottom-buttons">Alkolsüz Hizmet Veren Tesisler</button>
+				<button type="button" class="bottom-buttons">Vizesiz Turlar</button>
+				<button type="button" class="bottom-buttons">MSC Cruises</button>
+				<button type="button" class="bottom-buttons">Costa Cruises</button>
+				<button type="button" class="bottom-buttons">Size Özel Seyahat Paketleri</button>
+				<button type="button" class="bottom-buttons">DisneyLand Paris</button>
+				<button type="button" class="bottom-buttons">Karadeniz Turları</button>
+				<button type="button" class="bottom-buttons">Safranbolu Turları</button>
+				<button type="button" class="bottom-buttons">Yurt dışı Fırsat Turları</button>
+				<button type="button" class="bottom-buttons">Etstur Gemisi</button>
+			</div>			
+		</div>								
+	</div> <!-- Bottom Menu Ends !-->
+	
+	<div class="space"></div>
+	
+	<!-- Bottom Menu Rezervasyon ve Tesis Button !-->
+	<div class="container">
+		<div class="col-md-12">		
+			<hr>
+		</div>
+		<center>
+			<button type="button" class="last-buttons-1">Rezervasyon Belgeleri ></button>	
+			<button type="button" class="last-buttons-2">Tesisinizi Ücretsiz Kaydedin ></button>
+		</center>
+	</div> <!-- Bottom Menu Rezervasyon ve Tesis Button Ends !-->
+	
+	<!-- Bottom Long Text !-->
+	<div class="container">		
+		<center>
+		<div id="bottom-text">
+			Tatilin eğlenceli dünyasını deneyim ve güvenle buluşturan Etstur ile yurt dışı, yurt içi, gemi ve kültür turları; Kıbrıs, şehir ve yurt içi otelleri; uçak bileti ve araç kiralama hizmetlerine ulaşabilirsiniz. Ayrıca son dakika fırsatlarıyla en uygun alternatiflere göz atabilir, online rezervasyon ile tatil planlarınızı hemen yapabilirsiniz.<br><br>
+
+			Etstur bünyesinde 2 şube (Harbiye, Kızıltoprak) ve 130'dan fazla Etstur acentesi bulunuyor. Firmanın 444 03 87 numaralı Çağrı Merkezi de tüm gün faaliyet gösteriyor. etstur.com'da yurt içinde binin üzerinde otel ve tatil köyü, yurt dışında 100'e yakın destinasyon hakkında detaylı bilgiler bulunuyor. Acente-otel-uçak-otobüs- rehberlik seyahat hizmetleri zincirini Türkiye'de kuran ilk turizm firması olan Etstur, sitesinde gemi turu, uçak bileti, araç kiralama ve otel satışı hizmetlerini online olarak sunuyor. Tatil yapacağı otele karar veren misafir aynı zamanda uçak biletini ve transferini de online olarak satın alabiliyor. Kültür turları, Kıbrıs turları ve şirketlere özel alternatifler ise sitede sunulan diğer hizmetler arasında.</br><br>
+
+			Türk turizm sektörünün lider firması olan Etstur, Türk gezginlere tatil alternatifleri üretmek üzere 1991 yılında Mehmet ve Murat Ersoy tarafından kuruldu. Sektöründe lider tur operatörü olan Etstur, sektörde ilkleri gerçekleştirerek diğer firmalara da örnek oldu.
+		</div>
+		</center>		
+		<div class="space"></div>		
+	</div> <!-- Bottom Long Text Ends!-->
+
+	
+	<!-- Bottom Logos 1 and Lists !-->
+	<div class="bottom-menu-grey">
+		<div class="container">
+			<div class="col-md-12">		
+				<div id="logos">			
+					<a href=""><img src="facebook-logo.png"></a>
+					<a href=""><img src="twitter-logo.png"></a>
+					<a href=""><img src="foursquare-logo.png"></a>
+					<a href=""><img src="googleplus-logo.png"></a>
+					<a href=""><img src="youtube-logo.png"></a>
+					<a href=""><img src="linkedin-logo.png"></a>
+					<a href=""><img src="pinterest-logo.png"></a>	
+					<button class="last-buttons-6"></button>
+					<button class="last-buttons-5"></button>
+					<button class="last-buttons-4">150'nin<br>üzerinde acenta</button>
+					<button class="last-buttons-3">444 0 387</button>				
+				</div>			
+			</div>
+		</div>
+	
+		<div class="container">
+			<hr>			
+			<div class="col-sm-2">					
+				<div class="lists">
+					<ul>
+						<a href=""><li>Antalya Otelleri</li></a>
+						<a href=""><li>Ankara Otelleri</li></a>
+						<a href=""><li>Büyükada Otelleri</li></a>
+						<a href=""><li>İzmir Otelleri</li></a>
+						<a href=""><li>Marmaris Otelleri</li></a>					
+					</ul>	
+				</div>	
+			</div>		
+			
+			<div class="col-sm-2">
+				<div class="lists">
+					<ul>
+						<a href=""><li>Alanya Otelleri</li></a>
+						<a href=""><li>Assos Otelleri</li></a>
+						<a href=""><li>Çeşme Otelleri</li></a>
+						<a href=""><li>İstanbul Otelleri</li></a>
+						<a href=""><li>Mersin Otelleri</li></a>
+					</ul>			
+				</div>	
+			</div>	
+			
+			<div class="col-sm-2">
+				<div class="lists">
+					<ul>
+						<a href=""><li>Alaçatı Otelleri</li></a>
+						<a href=""><li>Belek Otelleri</li></a>
+						<a href=""><li>Didim Otelleri</li></a>
+						<a href=""><li>Kapadokya Otelleri</li></a>
+						<a href=""><li>Sapanca Otelleri</li></a>
+					</ul>	
+				</div>	
+			</div>	
+			
+			<div class="col-sm-2">
+				<div class="lists">
+					<ul>
+						<a href=""><li>Eskişehir Otelleri</li></a>
+						<a href=""><li>Bodrum Otelleri</li></a>
+						<a href=""><li>Datça Otelleri</li></a>
+						<a href=""><li>Kaş Otelleri</li></a>
+						<a href=""><li>Side Otelleri</li></a>
+					</ul>
+				</div>	
+			</div>	
+			
+			<div class="col-sm-2">
+				<div class="lists">
+					<ul>
+						<a href=""><li>Ayvalık Otelleri</li></a>
+						<a href=""><li>Bozcaada Otelleri</li></a>
+						<a href=""><li>Eskişehir Otelleri</li></a>
+						<a href=""><li>Kemer Otelleri</li></a>
+						<a href=""><li>Şile Otelleri</li></a>
+					</ul>
+				</div>	
+			</div>		
+				
+			<div class="col-sm-2">
+				<div class="lists">
+					<ul>
+						<a href=""><li>Amasya Otelleri</li></a>
+						<a href=""><li>Bursa Otelleri</li></a>
+						<a href=""><li>Fethiye Otelleri</li></a>
+						<a href=""><li>Kuşadası Otelleri</li></a>
+						<a href=""><li>Uludağ Otelleri</li></a>
+					</ul>
+				</div>	
+			</div>		
+		</div>	
+		
+			<div class="container">		
+				<hr>		
+				<div class="col-sm-2">
+					<div class="lists">
+						<ul>
+							<a href=""><li>Misafir İlişkileri Yardım</li></a>
+							<a href=""><li>Satış Acentelerimiz</li></a>
+							<a href=""><li>Online Katalog</li></a>
+							<a href=""><li>Şirketlere Özel</li></a>
+							<a href=""><li>Hediye Kart</li></a>
+						</ul>				
+						
+					</div>	
+				</div>		
+				<div class="col-sm-2">
+					<div class="lists">
+						<ul>
+							<a href=""><li>Kurumsal</li></a>
+							<a href=""><li>İnsan Kaynakları</li></a>
+							<a href=""><li>İletişim</li></a>
+							<a href=""><li>Ulaşım</li></a>
+							<a href=""><li>İşlem Rehberi</li></a>
+						</ul>			
+						
+					</div>	
+				</div>		
+				<div class="col-sm-2">
+					<div class="lists">
+						<ul>
+							<a href=""><li>Şehir Oteli</li></a>
+							<a href=""><li>Kıbrıs Otel</li></a>
+							<a href=""><li>Yurt Dışı Otel</li></a>
+							<a href=""><li>Tatil Köyü & Resort</li></a>
+							<a href=""><li>Satış Kanalları</li></a>
+						</ul>			
+						
+					</div>	
+				</div>		
+				<div class="col-sm-2">
+					<div class="lists">
+						<ul>
+							<a href=""><li>Online Satış</li></a>
+							<a href=""><li>Uçak Bileti</li></a>
+							<a href=""><li>Araç</li></a>
+							<a href=""><li>Tatil Fırsatları</li></a>
+						</ul>			
+						
+					</div>	
+				</div>		
+				<div class="col-sm-2 ">
+					<div class="lists">
+						<ul>
+							<a href=""><li>Yurt Dışı Tur</li></a>
+							<a href=""><li>Kültür Turu</li></a>
+							<a href=""><li>Gemi Turu</li></a>
+							<a href=""><li>Hac & Umre </li></a>
+						</ul>	
+					</div>	
+				</div>	
+				<div class="col-sm-2 ">
+					<div class="lists">
+						<ul>
+							<a href=""><li>Size Özel Seyahat</li></a>
+							<a href=""><li>Disneyland® Paris</li></a>
+							<a href=""><li>The Land Of Legends</li></a>
+							<a href=""><li>Erken Rezervasyon</li></a>
+						</ul>	
+					</div>	
+				</div>
+			</div>	
+	
+		<div class="container">
+		<hr>
+			<div class="col-md-2">			
+				<img src="bottom-logo-4.png">	
+			</div>
+			<div class="col-md-2">			
+				<img id="b-logo" src="bottom-logo-5.jpg">	
+			</div>		
+		</div>	
+	</div> <!-- Bottom Logos 1 and Lists Ends !-->
+
+	<!-- Bottom Logos 2 !-->
+	<div class="bottom-menu-darkgrey">
+		<div class="container">
+			<div class="md-2">
+				<a href=""><img id="etstur-logo"src="etstur-logo.png"></a>
+			</div>	
+		
+			<div class="md-1">
+				<a href=""><img id="darkgrey-logos"src="telpuan-logo.png"></a>
+				<a href=""><img id="darkgrey-logos"src="letsgo-logo.png"></a>
+				<a href=""><img id="darkgrey-logos"src="jetset.png"> </a>
+				<a href=""><img id="darkgrey-logos"src="etsmice-logo.png"></a>
+				<a href=""><img id="darkgrey-logos"src="ucuzabilet-logo.png"></a>
+			</div>					
+		</div>
+	</div> <!-- Bottom Logos 2 Ends !-->
+
+	<!-- Bottom Copyright !-->
+	<div class="container">
+	
+		<div class="col-md-13">
+			<div id="en-alt-text">
+				<p>Copyright © 1997-2017 Ets Ersoy Turistik Servisleri A.Ş. Tüm hakları saklıdır. <a href="" id="en-alt-link"><strong>Kullanım Sözleşmesi</strong></a> | <a href="" id="en-alt-link"><strong>Gizlilik Sözleşmesi</strong></a></p>
+				<br>
+				<p>Sayfada anılan tüm otel konaklama fiyatları, Worldcard ile tek ödemede, gecelik kişi başı en ucuz başlangıç fiyatlarıdır. Sayfada anılan tüm fiyatlar, ilgili üründe kontenjan olması durumunda geçerlidir.<br>
+				Sadece belirli dönemlerde geçerlidir.</p>
+				<br>
+				<p>Bu web sitesi, bilgisayarınıza bilgi depolamak amacıyla tanımlama bilgilerini kullanır. Bu bilgilerin bir kısmı sitenin çalışmasında esas rolü üstlenirken bir kısmı ise kullanıcı deneyimlerinin iyileştirilmesine yardımcı olur. Sitemizi kullanarak bu tanımlama bilgilerinin yerleştirilmesine izin vermiş olursunuz. Kişisel Verilerin Korunması, Gizlilik Politikası ve Çerez (Cookie) Kullanımı İlkeleri hakkında
+				<a href="" id="en-alt-link"><strong> detaylı bilgi için tıklayınız.</strong></a></p>
+			</div>
+		</div>
+	</div> <!-- Bottom Copyright Ends !-->
+	
+	<div class="space"></div>	
+
+</body>
+
+</html>
